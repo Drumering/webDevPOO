@@ -9,8 +9,8 @@ public class Main {
 		p.setIdade(66);
 		p.setProfissao("Tira");
 		
-		c.ano = 1966;
-		c.modelo = "Mini";
+		c.setAno(1966);
+		c.setModelo("Mini");
 		
 		boolean atendida = p.solicitarParada(c);
 		
