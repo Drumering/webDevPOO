@@ -5,6 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+import com.opet.util.Reader;
+
 public class HospitalMain {
 	Pessoa p[] = new Pessoa[10];
 	
@@ -12,8 +14,18 @@ public class HospitalMain {
 		
 	}
 
-	public static void cadastrarMedico() {
-		
+	public static void cadastrarMedico() throws Exception {
+		Pessoa Medico = new Pessoa();
+		System.out.println("Insira o nome do medico: ");
+		Medico.setNome(Reader.readString());
+		System.out.println("Insira Data de Nascimento: ");
+		Medico.setDataNascimento(Reader.readString());
+		System.out.println("Insira um numero para contato: ");
+		Medico.setContato(Reader.readInt());
+		System.out.println("Insira o CPF: ");
+		Medico.setCpf(Reader.readInt());
+		System.out.println("Insira Email:");
+		Medico.setEmail(Reader.readString());
 	}
 
 }
