@@ -1,16 +1,22 @@
 package br.com.opet.ex01;
 
 public class Pessoa {
-	//Atributos
+	// Atributos
 	private int idade;
 	private String profissao;
-	
-	//Metodos
+
+	// Construtor
+	public Pessoa(int idade, String profissao) {
+		this.idade = idade;
+		this.profissao = profissao;
+	}
+
+	// Metodos
 	boolean solicitarParada(Carro c) {
 		boolean atendida = c.desacelera();
-		if(atendida) {
+		if (atendida) {
 			return true;
-		}else {
+		} else {
 			return false;
 		}
 	}
@@ -23,7 +29,8 @@ public class Pessoa {
 	}
 
 	/**
-	 * @param idade the idade to set
+	 * @param idade
+	 *            the idade to set
 	 */
 	public void setIdade(int idade) {
 		this.idade = idade;
@@ -37,7 +44,8 @@ public class Pessoa {
 	}
 
 	/**
-	 * @param profissao the profissao to set
+	 * @param profissao
+	 *            the profissao to set
 	 */
 	public void setProfissao(String profissao) {
 		this.profissao = profissao;
