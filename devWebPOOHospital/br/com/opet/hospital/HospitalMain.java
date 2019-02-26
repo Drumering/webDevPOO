@@ -7,6 +7,7 @@ import java.util.List;
 
 public class HospitalMain {
 	Pessoa p[] = new Pessoa[10];
+	
 	public static void main(String[] args) throws ParseException {
 		
 	}
