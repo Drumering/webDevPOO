@@ -15,7 +15,7 @@ public class HospitalMain {
 	}
 
 	public static void cadastrarMedico() throws Exception {
-		Pessoa Medico = new Pessoa();
+		Medico Medico = new Medico();
 		System.out.println("Insira o nome do medico: ");
 		Medico.setNome(Reader.readString());
 		System.out.println("Insira Data de Nascimento: ");
@@ -26,6 +26,8 @@ public class HospitalMain {
 		Medico.setCpf(Reader.readInt());
 		System.out.println("Insira Email:");
 		Medico.setEmail(Reader.readString());
+		System.out.println("Insira Especialidade: ");
+		Medico.setEspecialidade(Reader.readString());
 	}
 
 }
