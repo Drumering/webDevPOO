@@ -9,7 +9,7 @@ import com.opet.util.Reader;
 
 public class HospitalMain {	
 
-	public static void main(String[] args) throws ParseException {
+	public static void main(String[] args) throws Exception {
 		Pessoa p[] = new Pessoa[10];
 		Medico m[] = new Medico[10];
 		
